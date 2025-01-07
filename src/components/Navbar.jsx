@@ -8,10 +8,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-yellow-500 text-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold hover:underline">
+        <Link to="/Tugas_akhir/" className="text-2xl font-bold hover:underline">
           CoffeeVerse
         </Link>
         {/* Hamburger Button */}
@@ -64,8 +68,9 @@ const Navbar = () => {
         >
           <li className="py-2 lg:py-0">
             <Link
-              to="/"
+              to="/Tugas_akhir/"
               className="block lg:inline-block hover:text-gray-200 transition duration-300"
+              onClick={closeMenu}
             >
               Home
             </Link>
@@ -74,6 +79,7 @@ const Navbar = () => {
             <Link
               to="/recipes"
               className="block lg:inline-block hover:text-gray-200 transition duration-300"
+              onClick={closeMenu}
             >
               Recipes
             </Link>
@@ -82,6 +88,7 @@ const Navbar = () => {
             <Link
               to="/add"
               className="block lg:inline-block hover:text-gray-200 transition duration-300"
+              onClick={closeMenu}
             >
               Add Recipe
             </Link>
@@ -90,6 +97,7 @@ const Navbar = () => {
             <Link
               to="/about"
               className="block lg:inline-block hover:text-gray-200 transition duration-300"
+              onClick={closeMenu}
             >
               About
             </Link>
