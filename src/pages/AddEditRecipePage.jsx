@@ -121,7 +121,7 @@ const AddEditItemPage = () => {
       }
     }
 
-    navigate("/Tugas_akhir/"); // Arahkan kembali setelah berhasil
+    navigate("/CoffeVerse/"); // Arahkan kembali setelah berhasil
   };
 
   // Fungsi untuk menghapus item
@@ -131,7 +131,7 @@ const AddEditItemPage = () => {
       console.error("Error deleting item:", error);
       return;
     }
-    navigate("/Tugas_akhir/"); // Arahkan kembali setelah menghapus item
+    navigate("/CoffeVerse/"); // Arahkan kembali setelah menghapus item
   };
 
   return (
